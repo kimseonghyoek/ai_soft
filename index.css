@@ -1,0 +1,117 @@
+@import "./header/header.css";
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+
+html {
+  width: 1512px ;
+}
+
+body {
+  margin: 0%;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+#navbar {
+  position: sticky;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;  
+  display: flex;
+}
+
+#first > img {
+  width: 45%;
+  position: relative;
+}
+
+#first > h1 {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  top: 35%;
+  opacity: 0;
+}
+
+#first > h1 > strong {
+  font-size: 5.5rem;
+  color: rgb(187, 255, 131);
+
+}
+
+#first {
+  height: 92vh;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  background-color: #0061d0;
+}
+
+.school {
+  width: 100%;
+}
+
+.introd {
+  padding: 0%;
+  list-style: none;
+}
+
+.introd > li > p {
+  color: #E4DCCF;
+  font-size: 17px;
+}
+
+.introd > li:last-child {
+  padding: 2.5rem 0rem;
+}
+
+.introd > li > a {
+  font-size: 25px;
+  color:#EA5455;
+}
+
+.wrap-text {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  background-color: #002B5B;
+}
+
+.wrap-text > .school > h1, h2 {
+  color: #F9F5EB;
+}
+
+.wrap-text > .school > h1 {
+  font-size: 3rem;
+}
+
+.wrap-text > .school > h2 {
+  margin: 10px 0px;
+}
+
+#second {
+  background-color: #F9F5EB;
+}
+
+#wrap-img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#img-content {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("yeoul1.jpeg");
+  background-position: center;
+  border: 1px soild black;
+}
