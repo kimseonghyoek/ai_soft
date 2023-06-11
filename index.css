@@ -1,15 +1,17 @@
 @import "./header/header.css";
 @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
 
-html {
-  width: 1512px ;
-}
-
 body {
   margin: 0%;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 #navbar {
@@ -18,12 +20,20 @@ body {
 
 .page {
   width: 100vw;
-  height: 100vh;  
+  height: 100vh;
+}
+
+#first {
+  width: 100%;
+  height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0061d0;
 }
 
 #first > img {
-  width: 45%;
+  width: 850px;
   position: relative;
 }
 
@@ -31,87 +41,75 @@ body {
   display: inline-block;
   color: white;
   position: absolute;
-  justify-content: center;
-  align-items: center;
   font-size: 5rem;
-  top: 35%;
+  top: 30%;
   opacity: 0;
+  text-align: center;
 }
 
 #first > h1 > strong {
   font-size: 5.5rem;
   color: rgb(187, 255, 131);
-
 }
 
-#first {
-  height: 92vh;
-  text-align: center;
+#wrap-second {
+  position: relative;
+}
+
+#second {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  background-color: #0061d0;
 }
 
 .school {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 0px;
+}
+
+.school > h2 {
+  margin: 5px 0px;
+}
+
+.school > h1 {
+  font-size: 45px;
+  margin: 6px 0px;
 }
 
 .introd {
   padding: 0%;
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
-.introd > li > p {
-  color: #E4DCCF;
-  font-size: 17px;
-}
-
-.introd > li:last-child {
-  padding: 2.5rem 0rem;
-}
-
-.introd > li > a {
-  font-size: 25px;
-  color:#EA5455;
-}
-
-.wrap-text {
-  padding: 1rem 3rem;
+.h-item {
+  width: 350px;
+  height: 405px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 35px;
+  border-radius: 7px;
   display: flex;
   flex-direction: column;
-
+  align-self: center;
   justify-content: center;
-  background-color: #002B5B;
+  text-align: center;
 }
 
-.wrap-text > .school > h1, h2 {
-  color: #F9F5EB;
+.h-item > p {
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.wrap-text > .school > h1 {
-  font-size: 3rem;
-}
-
-.wrap-text > .school > h2 {
-  margin: 10px 0px;
-}
-
-#second {
-  background-color: #F9F5EB;
-}
-
-#wrap-img {
-  display: flex;
+#back {
+  position: absolute;
   width: 100%;
-  height: 100%;
-}
-
-#img-content {
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("yeoul1.jpeg");
-  background-position: center;
-  border: 1px soild black;
+  height: 25%;
+  background-color: #0061d0;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 100% 0);
+  clip-path: polygon(0 0, 100% 0, 0% 100%, 0 0%);
 }
