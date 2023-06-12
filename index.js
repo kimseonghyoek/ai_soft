@@ -12,7 +12,3 @@ $(document).ready(function(){
       $('.text').css({'transform' : 'translate3d(0,'+ textScroll +'px,0)', 'opacity' : showText});
   });
 });
-
-$(document).ready(function(){
-  $('.swiper').slick();
-});
