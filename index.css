@@ -157,12 +157,12 @@ body {
 }
 
 .sec-first {
-  background-color: #ea5455;
+  background: linear-gradient( to bottom , #ea5455, #e77272);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 190px;
+  height: 100%;
 }
 
 .sec-first h1 {
